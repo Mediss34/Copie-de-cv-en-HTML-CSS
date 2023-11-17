@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3 {
+    font-size: 20px;
+    color: #77c8e5;
+}
+.cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 890px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* ---------------------------header cv-------------------------------------- */
+.cv-header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #4b97b3;
+    padding: 30px;
+    color: white;
+}
+.cv-photo {
+    width: 150px;
+    height: 140px;
+}
+h1, h2 {
+    margin: 2px;
+}
+h2 {
+    font-weight: 400;
+}
+.icon-header {
+    width: 20px;
+    height: 20px;    
+    margin-top: 2px;
+    margin-right: 6px;
+}
+.icon-mail {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.icon-car {
+    width: 22px;
+    height: 22px;
+}
+.mailto-header {
+    color: white;
+}
+.cv-info ul {
+    list-style-type: none;
+}
+.cv-info li {
+    display: flex;
+    align-items: center;
+}
+/* -------------------------body cv------------------------------------------ */
+.cv-body {
+    display: flex;
+    gap: 60px;
+    padding: 30px;
+}
+.first-thing {
+    margin-top: 0;
+}
+.section {
+    border-top: 2px solid #4b97b3;
+    padding-top: 20px;
+}
+
+.hyperlien-code, span, a {
+    color: #77c8e5;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(175, 163, 243);
+    transition: 0.1s;
+}
+
+h3 {
+    margin-left: 5px;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    margin: 0px;
+}
+#formation-1 > h4 {
+    margin-top: 0;
+}
+#formation-2 > ul {
+    list-style-type: none;
+    margin-top: 0px;
+}
+.section ul {
+    margin-top: 0;
+}
+
+.cv-cd .section > ul {
+    list-style-type: none;
+
+}
+
+.cv-cd .section ul li ul {
+    list-style-type: square;
+    padding-left: 140px;
+}
+
+.cd-sport {
+    display: flex;
+}
+.cv-exp li {
+    list-style-type: square;
+}
+
+ul {
+    margin-left: -40px;
+}
+
+.contain-gauge {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 10px;
+    border: solid 1px black;
+    margin-top: 12px;
+}
+.gauge {
+    height: 10px;
+    background-color: #4b97b3;
+}
+.gauge-en {
+    animation: 1.5s slideEn forwards;
+}
+.gauge-esp {
+    animation: 1.5s slideEsp forwards; 
+}
+/* -------------------------column cv---------------------------------------- */
+
+.cv-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;   
+}
+
+/* -------------------------Phone responsive----------------------------------*/
+
+@media only screen 
+    and (min-width: 360px) and (max-width: 1150px) {
+
+    .cv {
+        width: 990px;
+        box-shadow: none;
+        font-size: 40px;
+    }
+    .cv-header {
+        flex-direction: column;
+    }
+
+    .cv-photo {
+        width: 400px;
+        height: 360px;
+    }
+    
+    .icon-header {
+        width: 50px;
+        height: 50px;    
+        margin-top: 2px;
+        margin-right: 6px;
+    }
+    .icon-mail {
+        width: 42px;
+        height: 42px;
+        margin-right: 10px;
+    }
+    .icon-car {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .cv-body {
+        flex-direction: column;
+    }
+    .cd-sport {
+        font-size: 41px;
+    }
+    .hyperlien-code {
+        font-size: 39px;
+    }
+    h4 {
+        margin-top: 60px;
+    }
+    .section {
+        padding-top: 40px;
+    }
+    h3 {
+        font-size: 41px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+    .cv {
+        width: 100%;
+    }
+}
+
+@media only screen and (device-width: 320px) and (device-height:914px) {
+    .cd-sport {
+        font-size: 41px;
+    }
+    h3 {
+        font-size: 41px;
+    }
+    .hyperlien-code {
+        font-size: 39px;
+    }
+}
+
+
+@keyframes slideEn{
+    from {
+        width: 0;
+   }
+    to {
+        width: 80%;
+   }  
+  }
+@keyframes slideEsp{
+    from {
+        width: 0;
+   }
+    to {
+        width: 50%;
+   }  
+  }
+ 
